@@ -130,7 +130,7 @@ def hangman(secretWord):
             print("\nGood guess: {}".format(getGuessedWord(secretWord, guess)))
             if isWordGuessed(secretWord, guess):
                 print("\nCongratulations, you won!")
-                ans=input('Do you want to start a new game?')
+                ans=input('Do you want to start a new game?(press y for yes')  # start a new game
                 if ans=='y':
                     newgame()
                 else:
@@ -143,7 +143,7 @@ def hangman(secretWord):
             if guessleft==0:
                 print("Sorry, you ran out of guesses. The word was else.")
                 print("word was: {}".format(secretWord))
-                ans=input('Do you want to start a new game?')
+                ans=input('Do you want to start a new game?(press y for yes')  # start a new game
                 if ans=='y':
                     newgame()
                 else:
